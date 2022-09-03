@@ -1,33 +1,54 @@
 <h3>New Booking</h3>
-<mat-form-field floatLabel="auto" >
-<input type="text" matInput placeholder="Enter Customer Name"
-required="required"/>
-<mat-label>Customer Name</mat-label>
-<mat-hint align="end">Upto 30 characters</mat-hint>
-<mat-icon matPrefix>person</mat-icon>
+<div class="mb">
+    <mat-form-field floatLabel="auto">
+        <input type="text" matInput placeholder="Enter Customer Name" required="required" />
+        <mat-label>Customer Name</mat-label>
+        <mat-hint align="end">Upto 30 characters</mat-hint>
+        <mat-icon matPrefix>person</mat-icon>
+    </mat-form-field> <br>
 
-</mat-form-field> <br>
+    <mat-form-field floatLabel="auto" appearance="standard">
+        <mat-icon matPrefix>call</mat-icon>
+        <input type="text" matInput placeholder="Enter phone number" required="required" />
+        <mat-label>Phone Number</mat-label>
+        <mat-hint align="end">10 digit phone number</mat-hint>
+    </mat-form-field> <br>
 
-<mat-form-field floatLabel="auto" appearance="standard">
-    <mat-icon matPrefix>call</mat-icon>
+    <mat-form-field floatLabel="auto" appearance="standard">
+        <input type="text" matInput placeholder="Enter Email id" required="required" />
+        <mat-label>Email</mat-label>
+        <mat-icon matPrefix>email</mat-icon>
+    </mat-form-field> <br>
 
-    <input type="text" matInput placeholder="Enter phone number" required="required" />
-    <mat-label>Phone Number</mat-label>
+    <mat-form-field floatLabel="auto" appearance="standard">
+        <mat-select required="required">
+            <mat-option value="Kashmir">Kashmir</mat-option>
+            <mat-option value="Jammu">Jammu</mat-option>
+            <mat-option value="Amritsar">Amritsar</mat-option>
+            <mat-option value="Mumbai">Mumbai</mat-option>
+            <mat-option value="Varanasai">Varanasai</mat-option>
+            <mat-option value="Kerala">Kerala</mat-option>
+            <mat-option value="Delhi">Delhi</mat-option>
+            <mat-option value="Chennai">Chennai</mat-option>
+            <mat-option value="Jaipur">Jaipur</mat-option>
 
-    <mat-hint align="end">10 digit phone number</mat-hint>
-</mat-form-field> <br>
 
-<mat-form-field  floatLabel="auto" appearance="standard">
-    <input type="text" matInput placeholder="Enter Email id" required="required" />
-    <mat-label>Email</mat-label>
-    <mat-icon matPrefix>email</mat-icon>
-</mat-form-field> <br>
 
+
+
+        </mat-select>
+        <mat-label>Country</mat-label>
+        <mat-hint align="end">Choose a county</mat-hint>
+        <mat-icon matPrefix>place</mat-icon>
+    </mat-form-field> <br>
+
+
+</div>
 <div class="mb">
     <button mat-raised-button color="primary" class="mr">Save</button>
     <button mat-raised-button color="accent" class="mr">Cancel</button>
     <button mat-raised-button color="warn" class="mr">Delete</button> <br><br><br>
-    
+
 </div>
 
 <mat-icon></mat-icon>
